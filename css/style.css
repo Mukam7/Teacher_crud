@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loading-animation {
+  animation: spin 1s linear infinite;
+}
+
+.rotating-image {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+}
+
+.about-search {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  background-color: crimson;
+  margin-top: 25px;
+}
+
+.card {
+  height: 500px;
+}
+
+.card button {
+  height: 45px;
+}
+
+.card-body {
+  background-color: crimson;
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px !important;
+}
+
+#students .card {
+  margin-top: 150px !important;
+}
+.teacher-link {
+  width: 77px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px 10px;
+  background-color: crimson;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
